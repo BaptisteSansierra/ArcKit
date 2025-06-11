@@ -7,32 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DFBC1172DF9ACEF005593AC /* InflatingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1142DF9ACEF005593AC /* InflatingCircle.swift */; };
-		4DFBC1182DF9ACEF005593AC /* SpinningGradientArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1162DF9ACEF005593AC /* SpinningGradientArc.swift */; };
-		4DFBC1192DF9ACEF005593AC /* SpinningArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1152DF9ACEF005593AC /* SpinningArc.swift */; };
-		4DFBC11A2DF9ACEF005593AC /* ArcComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1122DF9ACEF005593AC /* ArcComponent.swift */; };
-		4DFBC11B2DF9ACEF005593AC /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1132DF9ACEF005593AC /* Circle.swift */; };
-		4DFBC1222DF9AD00005593AC /* BTScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC11D2DF9AD00005593AC /* BTScanner.swift */; };
-		4DFBC1232DF9AD00005593AC /* RainbowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC11F2DF9AD00005593AC /* RainbowView.swift */; };
-		4DFBC1242DF9AD00005593AC /* ArcTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC11C2DF9AD00005593AC /* ArcTrialView.swift */; };
-		4DFBC1252DF9AD00005593AC /* Sonar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1212DF9AD00005593AC /* Sonar.swift */; };
-		4DFBC1262DF9AD00005593AC /* MultiArcSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC11E2DF9AD00005593AC /* MultiArcSpinnerView.swift */; };
-		4DFBC1272DF9AD00005593AC /* SimpleLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1202DF9AD00005593AC /* SimpleLoaderView.swift */; };
+		4DFBC12A2DF9B93D005593AC /* ArcKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DFBC1292DF9B93D005593AC /* ArcKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4DFBC0DF2DF9A5E2005593AC /* ArcKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DFBC1122DF9ACEF005593AC /* ArcComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArcComponent.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/ArcComponent.swift; sourceTree = "<absolute>"; };
-		4DFBC1132DF9ACEF005593AC /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/Circle.swift; sourceTree = "<absolute>"; };
-		4DFBC1142DF9ACEF005593AC /* InflatingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InflatingCircle.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/InflatingCircle.swift; sourceTree = "<absolute>"; };
-		4DFBC1152DF9ACEF005593AC /* SpinningArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpinningArc.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/SpinningArc.swift; sourceTree = "<absolute>"; };
-		4DFBC1162DF9ACEF005593AC /* SpinningGradientArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpinningGradientArc.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/SpinningGradientArc.swift; sourceTree = "<absolute>"; };
-		4DFBC11C2DF9AD00005593AC /* ArcTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArcTrialView.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/ArcTrialView.swift; sourceTree = "<absolute>"; };
-		4DFBC11D2DF9AD00005593AC /* BTScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BTScanner.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/BTScanner.swift; sourceTree = "<absolute>"; };
-		4DFBC11E2DF9AD00005593AC /* MultiArcSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MultiArcSpinnerView.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/MultiArcSpinnerView.swift; sourceTree = "<absolute>"; };
-		4DFBC11F2DF9AD00005593AC /* RainbowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RainbowView.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/RainbowView.swift; sourceTree = "<absolute>"; };
-		4DFBC1202DF9AD00005593AC /* SimpleLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleLoaderView.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/SimpleLoaderView.swift; sourceTree = "<absolute>"; };
-		4DFBC1212DF9AD00005593AC /* Sonar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Sonar.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/Sonar.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -61,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFBC12A2DF9B93D005593AC /* ArcKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,17 +52,6 @@
 			children = (
 				4DFBC0E12DF9A5E2005593AC /* ArcKitDemo */,
 				4DFBC0E02DF9A5E2005593AC /* Products */,
-				4DFBC1122DF9ACEF005593AC /* ArcComponent.swift */,
-				4DFBC1132DF9ACEF005593AC /* Circle.swift */,
-				4DFBC1142DF9ACEF005593AC /* InflatingCircle.swift */,
-				4DFBC1152DF9ACEF005593AC /* SpinningArc.swift */,
-				4DFBC1162DF9ACEF005593AC /* SpinningGradientArc.swift */,
-				4DFBC11C2DF9AD00005593AC /* ArcTrialView.swift */,
-				4DFBC11D2DF9AD00005593AC /* BTScanner.swift */,
-				4DFBC11E2DF9AD00005593AC /* MultiArcSpinnerView.swift */,
-				4DFBC11F2DF9AD00005593AC /* RainbowView.swift */,
-				4DFBC1202DF9AD00005593AC /* SimpleLoaderView.swift */,
-				4DFBC1212DF9AD00005593AC /* Sonar.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +83,7 @@
 			);
 			name = ArcKitDemo;
 			packageProductDependencies = (
+				4DFBC1292DF9B93D005593AC /* ArcKit */,
 			);
 			productName = ArcKitDemo;
 			productReference = 4DFBC0DF2DF9A5E2005593AC /* ArcKitDemo.app */;
@@ -143,6 +113,9 @@
 			);
 			mainGroup = 4DFBC0D62DF9A5E1005593AC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4DFBC1282DF9B93D005593AC /* XCRemoteSwiftPackageReference "ArcKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4DFBC0E02DF9A5E2005593AC /* Products */;
 			projectDirPath = "";
@@ -168,17 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFBC1222DF9AD00005593AC /* BTScanner.swift in Sources */,
-				4DFBC1232DF9AD00005593AC /* RainbowView.swift in Sources */,
-				4DFBC1242DF9AD00005593AC /* ArcTrialView.swift in Sources */,
-				4DFBC1252DF9AD00005593AC /* Sonar.swift in Sources */,
-				4DFBC1262DF9AD00005593AC /* MultiArcSpinnerView.swift in Sources */,
-				4DFBC1272DF9AD00005593AC /* SimpleLoaderView.swift in Sources */,
-				4DFBC1172DF9ACEF005593AC /* InflatingCircle.swift in Sources */,
-				4DFBC1182DF9ACEF005593AC /* SpinningGradientArc.swift in Sources */,
-				4DFBC1192DF9ACEF005593AC /* SpinningArc.swift in Sources */,
-				4DFBC11A2DF9ACEF005593AC /* ArcComponent.swift in Sources */,
-				4DFBC11B2DF9ACEF005593AC /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DFBC1282DF9B93D005593AC /* XCRemoteSwiftPackageReference "ArcKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git@github.com/BaptisteSansierra/ArcKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DFBC1292DF9B93D005593AC /* ArcKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DFBC1282DF9B93D005593AC /* XCRemoteSwiftPackageReference "ArcKit" */;
+			productName = ArcKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4DFBC0D72DF9A5E1005593AC /* Project object */;
 }

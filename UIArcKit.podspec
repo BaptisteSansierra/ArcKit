@@ -24,8 +24,8 @@ Ideal for building easily custom loaders, progress indicators, scanner-style or 
   spec.author             = { "Baptiste Sansierra" => "baptiste.sansierra@gmail.com" }
   spec.ios.deployment_target = '12.0'
   spec.swift_version = '5.0'
-  #spec.source           = { :git => 'git@github.com:BaptisteSansierra/ArcKit.git', :tag => spec.version.to_s }
-  spec.source       = { :git => "https://github.com/BaptisteSansierra/ArcKit.git", :commit => "2067a6f58011fab375392cd7c8999bdf2bf03fba" }
+  spec.source           = { :git => 'git@github.com:BaptisteSansierra/ArcKit.git', :tag => spec.version.to_s }
+  #spec.source       = { :git => "https://github.com/BaptisteSansierra/ArcKit.git", :commit => "2067a6f58011fab375392cd7c8999bdf2bf03fba" }
   spec.source_files = 'ArcKit/Lib/*', 'ArcKit/TrialViews/*'
   spec.frameworks = 'UIKit'
 

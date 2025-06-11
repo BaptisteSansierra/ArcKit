@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
 
-  spec.name         = "ArcKit"
+  spec.name         = "UIArcKit"
   spec.version      = "1.0"
   spec.summary      = "Lightweight Swift library for drawing animated arcs and circles — perfect for loaders, progress indicators, and scanner UIs."
 
@@ -18,13 +18,14 @@ ArcKit is a lightweight and flexible Swift library for creating animated arcs an
 Ideal for building easily custom loaders, progress indicators, scanner-style or random UI components.
                    DESC
 
-  spec.homepage     = "git@github.com:BaptisteSansierra/ArcKit.git"
+  spec.homepage     = "https://github.com:BaptisteSansierra/ArcKit.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
   spec.author             = { "Baptiste Sansierra" => "baptiste.sansierra@gmail.com" }
   spec.ios.deployment_target = '12.0'
   spec.swift_version = '5.0'
-  spec.source           = { :git => 'git@github.com:BaptisteSansierra/ArcKit.git', :tag => spec.version.to_s }
+  #spec.source           = { :git => 'git@github.com:BaptisteSansierra/ArcKit.git', :tag => spec.version.to_s }
+  spec.source       = { :git => "https://github.com/BaptisteSansierra/ArcKit.git", :commit => "5d60445bd66ca2a45618abdf1bb96b03b7da466b" }
   spec.source_files = 'ArcKit/Lib/*', 'ArcKit/TrialViews/*'
   spec.frameworks = 'UIKit'
 

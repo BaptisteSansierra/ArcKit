@@ -25,7 +25,7 @@ Ideal for building easily custom loaders, progress indicators, scanner-style or 
   spec.ios.deployment_target = '12.0'
   spec.swift_version = '5.0'
   spec.source           = { :git => 'git@github.com:BaptisteSansierra/ArcKit.git', :tag => spec.version.to_s }
-  spec.source_files = 'ArcKit/*/*'
+  spec.source_files = 'ArcKit/Lib/*', 'ArcKit/TrialViews/*'
   spec.frameworks = 'UIKit'
 
 end

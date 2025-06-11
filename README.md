@@ -36,7 +36,7 @@ https://git@github.com/BaptisteSansierra/ArcKit.git
 
 Cocoapods:
 ```ruby
-pod 'ArcKit'
+pod 'UIArcKit'
 ```
 
 Carthage:

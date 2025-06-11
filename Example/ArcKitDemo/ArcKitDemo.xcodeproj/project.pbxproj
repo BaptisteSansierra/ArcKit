@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DFBC1172DF9ACEF005593AC /* InflatingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1142DF9ACEF005593AC /* InflatingCircle.swift */; };
+		4DFBC1182DF9ACEF005593AC /* SpinningGradientArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1162DF9ACEF005593AC /* SpinningGradientArc.swift */; };
+		4DFBC1192DF9ACEF005593AC /* SpinningArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1152DF9ACEF005593AC /* SpinningArc.swift */; };
+		4DFBC11A2DF9ACEF005593AC /* ArcComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1122DF9ACEF005593AC /* ArcComponent.swift */; };
+		4DFBC11B2DF9ACEF005593AC /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1132DF9ACEF005593AC /* Circle.swift */; };
+		4DFBC1222DF9AD00005593AC /* BTScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC11D2DF9AD00005593AC /* BTScanner.swift */; };
+		4DFBC1232DF9AD00005593AC /* RainbowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC11F2DF9AD00005593AC /* RainbowView.swift */; };
+		4DFBC1242DF9AD00005593AC /* ArcTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC11C2DF9AD00005593AC /* ArcTrialView.swift */; };
+		4DFBC1252DF9AD00005593AC /* Sonar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1212DF9AD00005593AC /* Sonar.swift */; };
+		4DFBC1262DF9AD00005593AC /* MultiArcSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC11E2DF9AD00005593AC /* MultiArcSpinnerView.swift */; };
+		4DFBC1272DF9AD00005593AC /* SimpleLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC1202DF9AD00005593AC /* SimpleLoaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4DFBC0DF2DF9A5E2005593AC /* ArcKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DFBC1122DF9ACEF005593AC /* ArcComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArcComponent.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/ArcComponent.swift; sourceTree = "<absolute>"; };
+		4DFBC1132DF9ACEF005593AC /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/Circle.swift; sourceTree = "<absolute>"; };
+		4DFBC1142DF9ACEF005593AC /* InflatingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InflatingCircle.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/InflatingCircle.swift; sourceTree = "<absolute>"; };
+		4DFBC1152DF9ACEF005593AC /* SpinningArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpinningArc.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/SpinningArc.swift; sourceTree = "<absolute>"; };
+		4DFBC1162DF9ACEF005593AC /* SpinningGradientArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpinningGradientArc.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/Lib/SpinningGradientArc.swift; sourceTree = "<absolute>"; };
+		4DFBC11C2DF9AD00005593AC /* ArcTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArcTrialView.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/ArcTrialView.swift; sourceTree = "<absolute>"; };
+		4DFBC11D2DF9AD00005593AC /* BTScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BTScanner.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/BTScanner.swift; sourceTree = "<absolute>"; };
+		4DFBC11E2DF9AD00005593AC /* MultiArcSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MultiArcSpinnerView.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/MultiArcSpinnerView.swift; sourceTree = "<absolute>"; };
+		4DFBC11F2DF9AD00005593AC /* RainbowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RainbowView.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/RainbowView.swift; sourceTree = "<absolute>"; };
+		4DFBC1202DF9AD00005593AC /* SimpleLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleLoaderView.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/SimpleLoaderView.swift; sourceTree = "<absolute>"; };
+		4DFBC1212DF9AD00005593AC /* Sonar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Sonar.swift; path = /Users/bat/work/app/perso/ArcKit/ArcKit/TrialViews/Sonar.swift; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4DFBC0F12DF9A5E5005593AC /* Exceptions for "ArcKitDemo" folder in "ArcKitDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4DFBC0DE2DF9A5E2005593AC /* ArcKitDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4DFBC0E12DF9A5E2005593AC /* ArcKitDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4DFBC0F12DF9A5E5005593AC /* Exceptions for "ArcKitDemo" folder in "ArcKitDemo" target */,
+			);
+			path = ArcKitDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DFBC0DC2DF9A5E2005593AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DFBC0D62DF9A5E1005593AC = {
+			isa = PBXGroup;
+			children = (
+				4DFBC0E12DF9A5E2005593AC /* ArcKitDemo */,
+				4DFBC0E02DF9A5E2005593AC /* Products */,
+				4DFBC1122DF9ACEF005593AC /* ArcComponent.swift */,
+				4DFBC1132DF9ACEF005593AC /* Circle.swift */,
+				4DFBC1142DF9ACEF005593AC /* InflatingCircle.swift */,
+				4DFBC1152DF9ACEF005593AC /* SpinningArc.swift */,
+				4DFBC1162DF9ACEF005593AC /* SpinningGradientArc.swift */,
+				4DFBC11C2DF9AD00005593AC /* ArcTrialView.swift */,
+				4DFBC11D2DF9AD00005593AC /* BTScanner.swift */,
+				4DFBC11E2DF9AD00005593AC /* MultiArcSpinnerView.swift */,
+				4DFBC11F2DF9AD00005593AC /* RainbowView.swift */,
+				4DFBC1202DF9AD00005593AC /* SimpleLoaderView.swift */,
+				4DFBC1212DF9AD00005593AC /* Sonar.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		4DFBC0E02DF9A5E2005593AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DFBC0DF2DF9A5E2005593AC /* ArcKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DFBC0DE2DF9A5E2005593AC /* ArcKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFBC0F22DF9A5E5005593AC /* Build configuration list for PBXNativeTarget "ArcKitDemo" */;
+			buildPhases = (
+				4DFBC0DB2DF9A5E2005593AC /* Sources */,
+				4DFBC0DC2DF9A5E2005593AC /* Frameworks */,
+				4DFBC0DD2DF9A5E2005593AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4DFBC0E12DF9A5E2005593AC /* ArcKitDemo */,
+			);
+			name = ArcKitDemo;
+			packageProductDependencies = (
+			);
+			productName = ArcKitDemo;
+			productReference = 4DFBC0DF2DF9A5E2005593AC /* ArcKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DFBC0D72DF9A5E1005593AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					4DFBC0DE2DF9A5E2005593AC = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 4DFBC0DA2DF9A5E1005593AC /* Build configuration list for PBXProject "ArcKitDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DFBC0D62DF9A5E1005593AC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4DFBC0E02DF9A5E2005593AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DFBC0DE2DF9A5E2005593AC /* ArcKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DFBC0DD2DF9A5E2005593AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DFBC0DB2DF9A5E2005593AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFBC1222DF9AD00005593AC /* BTScanner.swift in Sources */,
+				4DFBC1232DF9AD00005593AC /* RainbowView.swift in Sources */,
+				4DFBC1242DF9AD00005593AC /* ArcTrialView.swift in Sources */,
+				4DFBC1252DF9AD00005593AC /* Sonar.swift in Sources */,
+				4DFBC1262DF9AD00005593AC /* MultiArcSpinnerView.swift in Sources */,
+				4DFBC1272DF9AD00005593AC /* SimpleLoaderView.swift in Sources */,
+				4DFBC1172DF9ACEF005593AC /* InflatingCircle.swift in Sources */,
+				4DFBC1182DF9ACEF005593AC /* SpinningGradientArc.swift in Sources */,
+				4DFBC1192DF9ACEF005593AC /* SpinningArc.swift in Sources */,
+				4DFBC11A2DF9ACEF005593AC /* ArcComponent.swift in Sources */,
+				4DFBC11B2DF9ACEF005593AC /* Circle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4DFBC0F32DF9A5E5005593AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArcKitDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batsansierra.ArcKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DFBC0F42DF9A5E5005593AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArcKitDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batsansierra.ArcKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DFBC0F52DF9A5E5005593AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DFBC0F62DF9A5E5005593AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DFBC0DA2DF9A5E1005593AC /* Build configuration list for PBXProject "ArcKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DFBC0F52DF9A5E5005593AC /* Debug */,
+				4DFBC0F62DF9A5E5005593AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DFBC0F22DF9A5E5005593AC /* Build configuration list for PBXNativeTarget "ArcKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DFBC0F32DF9A5E5005593AC /* Debug */,
+				4DFBC0F42DF9A5E5005593AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DFBC0D72DF9A5E1005593AC /* Project object */;
+}

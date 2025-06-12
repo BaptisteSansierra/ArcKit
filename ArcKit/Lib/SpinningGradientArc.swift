@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SpinningGradientArc: SpinningArc {
+public class SpinningGradientArc: SpinningArc {
     
     public enum Interpolation {
         case linear
@@ -57,7 +57,7 @@ class SpinningGradientArc: SpinningArc {
     }
     
     // MARK: - override
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         guard let _ = startTime else { return }
         compute()
         let (center, radius) = computeFromRect(rect)
@@ -125,7 +125,7 @@ class SpinningGradientArc: SpinningArc {
         }
     }
     
-    override func compute() {
+    public override func compute() {
         super.compute()
     }
     

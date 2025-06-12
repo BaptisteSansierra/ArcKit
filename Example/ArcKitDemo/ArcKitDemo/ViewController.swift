@@ -52,18 +52,22 @@ class ViewController: UIViewController {
                 assertionFailure("Undefined segment")
                 return
         }
-        view.addSubview(trialView!)
-        trialView!.backgroundColor = .clear
-        trialView!.translatesAutoresizingMaskIntoConstraints = false
-        view.addConstraint(NSLayoutConstraint(item: trialView!, attribute: .centerX, relatedBy: .equal,
+        guard let trialView = trialView else {
+            assertionFailure("View creation issue")
+            return
+        }
+        view.addSubview(trialView)
+        trialView.backgroundColor = .clear
+        trialView.translatesAutoresizingMaskIntoConstraints = false
+        view.addConstraint(NSLayoutConstraint(item: trialView, attribute: .centerX, relatedBy: .equal,
                                               toItem: view, attribute: .centerX, multiplier: 1, constant: 0))
-        view.addConstraint(NSLayoutConstraint(item: trialView!, attribute: .top, relatedBy: .equal,
+        view.addConstraint(NSLayoutConstraint(item: trialView, attribute: .top, relatedBy: .equal,
                                               toItem: view, attribute: .top, multiplier: 1, constant: 140))
-        view.addConstraint(NSLayoutConstraint(item: trialView!, attribute: .height, relatedBy: .equal,
+        view.addConstraint(NSLayoutConstraint(item: trialView, attribute: .height, relatedBy: .equal,
                                               toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 270))
-        view.addConstraint(NSLayoutConstraint(item: trialView!, attribute: .width, relatedBy: .equal,
+        view.addConstraint(NSLayoutConstraint(item: trialView, attribute: .width, relatedBy: .equal,
                                               toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 270))
-        trialView!.startAnimating()
+        trialView.startAnimating()
     }
 }
 

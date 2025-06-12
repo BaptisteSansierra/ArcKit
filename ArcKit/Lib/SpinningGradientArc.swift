@@ -14,35 +14,35 @@ class SpinningGradientArc: SpinningArc {
         case pow(x: CGFloat)
     }
     
-    private var colorTip: UIColor
-    private var colorFoot: UIColor
+    // MARK: - private vars
+    private var colorStart: UIColor
+    private var colorEnd: UIColor
     private var colorInterpPolicy: Interpolation
-
-    private var alphaTip: CGFloat
-    private var alphaFoot: CGFloat
+    private var alphaStart: CGFloat
+    private var alphaEnd: CGFloat
     private var alphaInterpPolicy: Interpolation
 
+    // MARK: - init
     public init(centerOffset: CGPoint,
                 radiusRate: CGFloat,
                 startAngle: CGFloat,
                 endAngle: CGFloat,
                 lineWidth: CGFloat,
-                colorTip: UIColor,
-                colorFoot: UIColor,
+                colorStart: UIColor,
+                colorEnd: UIColor,
                 colorInterp: Interpolation,
-                alphaTip: CGFloat,
-                alphaFoot: CGFloat,
+                alphaStart: CGFloat,
+                alphaEnd: CGFloat,
                 alphaInterp: Interpolation,
                 speed: CGFloat,
                 acc: CGFloat = 0,
                 clockwise: Bool = true,
                 startPolicy: StartPolicy = .full) {
-        
-        self.colorTip = colorTip
-        self.colorFoot = colorFoot
+        self.colorStart = colorStart
+        self.colorEnd = colorEnd
         self.colorInterpPolicy = colorInterp
-        self.alphaTip = alphaTip
-        self.alphaFoot = alphaFoot
+        self.alphaStart = alphaStart
+        self.alphaEnd = alphaEnd
         self.alphaInterpPolicy = alphaInterp
 
         super.init(centerOffset: centerOffset,
@@ -56,26 +56,29 @@ class SpinningGradientArc: SpinningArc {
                    startPolicy: startPolicy)
     }
     
-    
+    // MARK: - override
     override func draw(_ rect: CGRect) {
         guard let _ = startTime else { return }
         compute()
         let (center, radius) = computeFromRect(rect)
-
+        guard let currentStartAngle = currentStartAngle,
+            let currentEndAngle = currentEndAngle else {
+            assertionFailure("Compute issue, missing data")
+            return
+        }
         // How many samples do we need for a clean alpha/color interpolation ?
         // Let's compute arc length
         let diffAngle = abs(startAngle - endAngle)
         let arcLen = 2 * CGFloat.pi * radius * diffAngle / 360.0
         // let's say a sample each 3 pixel
         let samples = Int(floor(arcLen / 3.0))
-        
         // And go sampling
-        var sampleStartAngle = currentStartAngle!
-        let sampleAngle = (currentEndAngle! - currentStartAngle!) / CGFloat(samples)
+        var sampleStartAngle = currentStartAngle
+        let sampleAngle = (currentEndAngle - currentStartAngle) / CGFloat(samples)
         for i in 0 ..< samples {
+            // Compute current color
             let samplingProgression = CGFloat(i) / CGFloat(samples)
             let sampleEndAngle = sampleStartAngle + sampleAngle
-
             var colorInterp: CGFloat
             switch colorInterpPolicy {
                 case .linear:
@@ -90,22 +93,25 @@ class SpinningGradientArc: SpinningArc {
                 case .pow(let x):
                     alphaInterp = pow(samplingProgression, x)
             }
-
-            let r = lerp(a: colorFoot.cgColor.components![0],
-                         b: colorTip.cgColor.components![0],
+            guard let colorStartComponents = colorStart.cgColor.components,
+                  let colorEndComponents = colorEnd.cgColor.components else {
+                assertionFailure("Color issue")
+                return
+            }
+            let r = lerp(a: colorEndComponents[0],
+                         b: colorStartComponents[0],
                          progress: colorInterp)
-            let g = lerp(a: colorFoot.cgColor.components![1],
-                         b: colorTip.cgColor.components![1],
+            let g = lerp(a: colorEndComponents[1],
+                         b: colorStartComponents[1],
                          progress: colorInterp)
-            let b = lerp(a: colorFoot.cgColor.components![2],
-                         b: colorTip.cgColor.components![2],
+            let b = lerp(a: colorEndComponents[2],
+                         b: colorStartComponents[2],
                          progress: colorInterp)
-            let a = lerp(a: alphaFoot,
-                         b: alphaTip,
+            let a = lerp(a: alphaEnd,
+                         b: alphaStart,
                          progress: alphaInterp)
-            
             let currentColor = UIColor(red: r, green: g, blue: b, alpha: a)
-                        
+            // Draw path
             let path = UIBezierPath(arcCenter: center,
                                     radius: radius,
                                     startAngle: sampleStartAngle * CGFloat.pi / 180.0,
@@ -119,11 +125,11 @@ class SpinningGradientArc: SpinningArc {
         }
     }
     
-    
     override func compute() {
         super.compute()
     }
     
+    // MARK: - private
     private func lerp(a: CGFloat, b: CGFloat, progress: CGFloat) -> CGFloat {
         guard progress >= 0  else {
             assertionFailure("Values can only be lerped from 0 to 1 \(progress)...")

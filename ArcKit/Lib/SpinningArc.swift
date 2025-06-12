@@ -111,12 +111,17 @@ public class SpinningArc: ArcComponent {
         guard let _ = startTime else { return }
         compute()
         let (center, radius) = computeFromRect(rect)
+        guard let currentStartAngle = currentStartAngle,
+            let currentEndAngle = currentEndAngle else {
+            assertionFailure("Compute issue, missing data")
+            return
+        }
 
         // Draw
         let path = UIBezierPath(arcCenter: center,
                                 radius: radius,
-                                startAngle: currentStartAngle! * CGFloat.pi / 180.0,
-                                endAngle: currentEndAngle! * CGFloat.pi / 180.0,
+                                startAngle: currentStartAngle * CGFloat.pi / 180.0,
+                                endAngle: currentEndAngle * CGFloat.pi / 180.0,
                                 clockwise: clockwise)
         path.lineWidth = lineWidth
         path.lineCapStyle = .round

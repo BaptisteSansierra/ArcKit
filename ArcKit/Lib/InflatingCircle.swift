@@ -28,7 +28,6 @@ public class InflatingCircle: ArcComponent {
     private var speed: CGFloat
     /// Animation delay
     private var delay: CGFloat
-
     /// Animation start time
     private var startTime: Date?
     /// Latest draw time
@@ -96,6 +95,10 @@ public class InflatingCircle: ArcComponent {
         // We might have a start delay, let's not start before that
         guard started else { return }
         let (center, radius) = computeFromRect(rect)
+        guard let currentColor = currentColor else {
+            assertionFailure("Compute issue, missing data")
+            return
+        }
         // Draw
         let path = UIBezierPath(arcCenter: center,
                                 radius: radius,
@@ -104,7 +107,7 @@ public class InflatingCircle: ArcComponent {
                                 clockwise: true)
         path.lineWidth = lineWidth
         path.lineCapStyle = .round
-        currentColor!.setStroke()
+        currentColor.setStroke()
         path.stroke()
     }
 

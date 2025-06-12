@@ -40,7 +40,6 @@ public class Circle: ArcComponent {
     }
     
     // MARK: - public
-    
     public func startAnimating() {
         // Not animated
     }

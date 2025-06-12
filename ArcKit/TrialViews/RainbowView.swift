@@ -9,17 +9,17 @@ import UIKit
 
 public class RainbowView: ArcTrialView {
     
-    var narcs = 100
-    //var arcs: [SpinningArc]
-    static var colors: [UIColor] = [
+    // MARK: - private vars
+    static private var colors: [UIColor] = [
         UIColor.red,
         UIColor.yellow,
         UIColor.green,
         UIColor.blue,
         UIColor.purple]
+    private var narcs = 100
     
+    // MARK: - init
     override public init(frame: CGRect) {
-        //arcs = [SpinningArc]()
         super.init(frame: frame)
         createArcs()
     }
@@ -28,6 +28,13 @@ public class RainbowView: ArcTrialView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - override
+    override public func stopAnimating() {
+        super.stopAnimating()
+        createArcs()
+    }
+
+    // MARK: - private
     private func createArcs() {
         clearArcs()
         for i in 0..<narcs {
@@ -50,17 +57,20 @@ public class RainbowView: ArcTrialView {
             return colors[colors.count - 1]
         }
         let lerpVal = colPos - CGFloat(colIndex)
-        
-        let r = lerp(a: colors[colIndex].cgColor.components![0],
-                     b: colors[colIndex+1].cgColor.components![0],
+        guard let colorStartComponents = colors[colIndex].cgColor.components,
+              let colorEndComponents = colors[colIndex + 1].cgColor.components else {
+            assertionFailure("Color issue")
+            return .black
+        }
+        let r = lerp(a: colorStartComponents[0],
+                     b: colorEndComponents[0],
                      progress: lerpVal)
-        let g = lerp(a: colors[colIndex].cgColor.components![1],
-                     b: colors[colIndex+1].cgColor.components![1],
+        let g = lerp(a: colorStartComponents[1],
+                     b: colorEndComponents[1],
                      progress: lerpVal)
-        let b = lerp(a: colors[colIndex].cgColor.components![2],
-                     b: colors[colIndex+1].cgColor.components![2],
+        let b = lerp(a: colorStartComponents[2],
+                     b: colorEndComponents[2],
                      progress: lerpVal)
-        
         return UIColor(red: r, green: g, blue: b, alpha: 1)
     }
     
@@ -74,40 +84,5 @@ public class RainbowView: ArcTrialView {
             return b
         }
         return a * (1 - progress) + b * progress
-    }
-    
-    /*
-     override public func draw(_ rect: CGRect) {
-     for arc in arcs {
-     arc.draw(rect)
-     }
-     }
-     
-     public func startAnimating() {
-     if let timer = timer {
-     timer.invalidate()
-     }
-     for arc in arcs {
-     arc.startAnimating()
-     }
-     timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [weak self] _ in
-     DispatchQueue.main.async {
-     self?.setNeedsDisplay()
-     }
-     })
-     }
-     
-     public func stopAnimating() {
-     timer?.invalidate()
-     for arc in arcs {
-     arc.stopAnimating()
-     }
-     createArcs()
-     }
-     */
-    
-    override public func stopAnimating() {
-        super.stopAnimating()
-        createArcs()
     }
 }
